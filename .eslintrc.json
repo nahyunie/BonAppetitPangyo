@@ -1,0 +1,44 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint", "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    // 여기에 규칙을 추가하거나 변경할 수 있습니다.
+    "indent": ["error", 2],
+    "prettier/prettier": [
+      "error", { "singleQuote":  true }
+    ],
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [
+        ".js", ".jsx", ".ts", ".tsx"
+      ] }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js", ".jsx", ".ts", ".tsx"
+        ]
+      }
+    }
+  }
+}

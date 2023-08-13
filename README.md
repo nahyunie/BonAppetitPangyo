@@ -1,0 +1,1 @@
+# CRA + Typescript + eslint + prettier template project
